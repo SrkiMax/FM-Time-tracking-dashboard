@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Time tracking dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="app.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="container-fluid">
+
+
+    <div class="user-container">
+      <div class="user-top">
+
+        <img src="images/image-jeremy.png" class="user-photo" alt="">
+        <div class="user-title">
+          <p>Report for</p>
+          <h1>Jeremy Robson</h1>
+        </div>
+      </div>
+      <div class="buttons-container">
+
+        <button id="dailyBtn">Daily</button>
+        <button id="weeklyBtn">Weekly</button>
+        <button id="monthlyBtn">Monthly</button>
+
+      </div>
+    </div>
+
+    <div class="work-img-container img">
+      <img class="work-pic size" src="images/icon-work.svg" alt="">
+      <div class="work-container bg-color">
+
+        <div class="text-and-elipsis">
+          <p class="card-text">Work</p>
+          <img class="elipsis" src="images/icon-ellipsis.svg" alt="">
+        </div>
+
+
+        <div class="work-container-daily">
+          <p class="work-number-daily big">32hrs</p>
+          <p class="work-number-daily-previous previous">Last Week - 36hrs</p>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="play-img-container img">
+      <img class="play-pic size" src="images/icon-play.svg" alt="">
+      <div class="play-container bg-color">
+
+        <div class="text-and-elipsis">
+          <p class="card-text">Play</p>
+          <img class="elipsis" src="images/icon-ellipsis.svg" alt="">
+        </div>
+
+        <div class="work-container-daily">
+          <p class="play-number-daily big">10hrs</p>
+          <p class="play-number-daily-previous previous">Last Week - 8hrs</p>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="study-img-container img">
+      <img class="study-pic size" src="images/icon-study.svg" alt="">
+      <div class="study-container bg-color">
+
+        <div class="text-and-elipsis">
+          <p class="card-text">Study</p>
+          <img class="elipsis" src="images/icon-ellipsis.svg" alt="">
+        </div>
+
+        <div class="work-container-daily">
+          <p class="study-number-daily big">4hrs</p>
+          <p class="study-number-daily-previous previous">Last Week - 7hrs</p>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="exercise-img-container img">
+      <img class="exercise-pic size" src="images/icon-exercise.svg" alt="">
+      <div class=" exercise-container bg-color">
+
+        <div class="text-and-elipsis">
+          <p class="card-text">Exercise</p>
+          <img class="elipsis" src="images/icon-ellipsis.svg" alt="">
+        </div>
+
+        <div class="work-container-daily">
+          <p class="exercise-number-daily big">4hrs</p>
+          <p class="exercise-number-daily-previous previous">Last Week - 5hrs</p>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="social-img-container img">
+      <img class="social-pic size" src="images/icon-social.svg" alt="">
+      <div class=" social-container bg-color">
+
+        <div class="text-and-elipsis">
+          <p class="card-text">Social</p>
+          <img class="elipsis" src="images/icon-ellipsis.svg" alt="">
+        </div>
+
+        <div class="work-container-daily">
+          <p class="social-number-daily big">5hrs</p>
+          <p class="social-number-daily-previous previous">Last Week - 10hrs</p>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="selfcare-img-container img">
+      <img class="selfcare-pic size" src="images/icon-self-care.svg" alt="">
+      <div class=" selfcare-container bg-color">
+
+        <div class="text-and-elipsis">
+          <p class="card-text">Self Care</p>
+          <img class="elipsis" src="images/icon-ellipsis.svg" alt="">
+        </div>
+
+        <div class="work-container-daily">
+          <p class="selfcare-number-daily big">2hrs</p>
+          <p class="selfcare-number-daily-previous previous">Last Week - 2hrs</p>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+  </main>
+
+
+
+
+
+
+
+
+
+
+  <!--
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+-->
+
+  <script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+  <script src="app.js"></script>
+  </div>
+</body>
+
+</html>
