@@ -328,7 +328,7 @@ button:active {
 .buttons-container {
 
     flex-direction: row;
-    margin-top: -2rem;
+    //margin-top: -2rem;
     padding-top: 1rem;
     justify-content: space-between;
 
@@ -347,10 +347,13 @@ button:active {
 }
 
 
-.img {
-    max-height: 285px;
-    max-height: none;
-    /* Allow height to stretch and fill parent */
+//.img {
+max-height: 262px !important;
+
+}
+
+.social-container {
+    margin-top: -3.8rem;
 }
 
 
@@ -367,6 +370,7 @@ button:active {
         padding-right: 1.5rem;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(7, 1fr);
+
         grid-template-areas:
             "user"
             "work"
@@ -379,31 +383,47 @@ button:active {
     }
 
 
-    //.user-top {
-    //flex-direction: row;
-    //align-items: center;
-    //padding-top: 1rem;
-    //padding-bottom: 3rem;
-    border-bottom-left-radius: 1rem;
-    /* Add this to restore the radius */
-    border-bottom-right-radius: 1rem;
-    /* Add this to restore the radius */
-    //background-color: var(--Blue);
+
+
+
+    .user-container {
+        //margin-bottom: 1rem;
+        max-height: 85px !important;
+    }
+
+    //.img {
+    max-height: 15px !important;
 }
 
-.img {
-    height: 10px !important;
-    margin-bottom: -2rem;
+
+
+.user-top {
+    flex-direction: row;
+    padding: 1rem;
+    height: 100%;
+}
+
+.user-photo {
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+}
+
+.user-title {
+    font-size: 12px;
+    margin-top: -15px;
+
+}
+
+.buttons-container {
+    flex-direction: row;
+    gap: 0.5rem;
 }
 
 
 .bg-color {
-
     padding: 2rem;
     padding-bottom: 1rem;
-
-    position: relative;
-    //bottom: 1.22rem;
 
 }
 
@@ -438,6 +458,9 @@ button:active {
 
 
 }
+
+
+
 
 @media(max-width:400px) {
 
