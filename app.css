@@ -34,6 +34,7 @@
 
 body {
     display: flex;
+    flex-direction: column;
     min-height: 100vh;
     justify-content: center;
     align-items: center;
@@ -287,76 +288,57 @@ button:active {
             "social selfcare";
 
         align-items: stretch;
-        /* Ensure all items have the same height */
-        //grid-auto-rows: 1fr;
+
     }
 
-    //.user-container {
-
-    //max-height: 300px !important;
-    padding-bottom: 1rem;
-}
-
-.user-top {
-
-    flex-direction: row;
-    padding-top: 1rem;
-    padding-bottom: 3rem;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-    background-color: var(--Blue);
-}
 
 
-.user-photo {
-    width: 70px;
-    height: 70px;
-    display: flex;
-    margin-top: 1rem;
+    .user-top {
 
-}
-
-.user-top p {
-    margin-top: 1rem;
-    margin-bottom: 0.1rem;
-
-}
+        flex-direction: row;
+        padding-top: 1rem;
+        padding-bottom: 3rem;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        background-color: var(--Blue);
+    }
 
 
+    .user-photo {
+        width: 70px;
+        height: 70px;
+        display: flex;
+        margin-top: 1rem;
+
+    }
+
+    .user-top p {
+        margin-top: 1rem;
+        margin-bottom: 0.1rem;
+    }
 
 
-.buttons-container {
-
-    flex-direction: row;
-    //margin-top: -2rem;
-    padding-top: 1rem;
-    justify-content: space-between;
-
-}
+    .buttons-container {
+        flex-direction: row;
+        padding-top: 1rem;
+        justify-content: space-between;
+    }
 
 
 
-.bg-color {
-    background-color: var(--Dark-blue);
-    padding: 2rem;
-    border-radius: 1rem;
-    margin-top: -2.5rem;
-    box-shadow: 0px 15px 0px 10px var(--Very-dark-blue);
+    .bg-color {
+        background-color: var(--Dark-blue);
+        padding: 2rem;
+        border-radius: 1rem;
+        margin-top: -2.5rem;
+        box-shadow: 0px 15px 0px 10px var(--Very-dark-blue);
+    }
 
 
-}
 
-
-//.img {
-max-height: 262px !important;
-
-}
-
-.social-container {
-    margin-top: -3.8rem;
-}
-
-
+    .social-container {
+        margin-top: -3.8rem;
+    }
 
 
 }
@@ -391,70 +373,67 @@ max-height: 262px !important;
         max-height: 85px !important;
     }
 
-    //.img {
-    max-height: 15px !important;
-}
 
 
 
-.user-top {
-    flex-direction: row;
-    padding: 1rem;
-    height: 100%;
-}
+    .user-top {
+        flex-direction: row;
+        padding: 1rem;
+        height: 100%;
+    }
 
-.user-photo {
-    width: 50px;
-    height: 50px;
-    margin-top: 5px;
-}
+    .user-photo {
+        width: 50px;
+        height: 50px;
+        margin-top: 5px;
+    }
 
-.user-title {
-    font-size: 12px;
-    margin-top: -15px;
+    .user-title {
+        font-size: 12px;
+        margin-top: -15px;
 
-}
+    }
 
-.buttons-container {
-    flex-direction: row;
-    gap: 0.5rem;
-}
-
-
-.bg-color {
-    padding: 2rem;
-    padding-bottom: 1rem;
-
-}
+    .buttons-container {
+        flex-direction: row;
+        gap: 0.5rem;
+    }
 
 
-.user-title p {
-    font-size: 14px;
-}
+    .bg-color {
+        padding: 2rem;
+        padding-bottom: 1rem;
 
-.card-text {
-    margin-bottom: 0.1rem;
-
-}
+    }
 
 
-.big {
-    font-size: 32px;
-    margin-bottom: 0.1rem;
-}
+    .user-title p {
+        font-size: 14px;
+    }
+
+    .card-text {
+        margin-bottom: 0.1rem;
+
+    }
 
 
-.work-container-daily {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-}
+    .big {
+        font-size: 32px;
+        margin-bottom: 0.1rem;
+    }
 
-.work-number-daily-previous {
-    position: relative;
-    top: 3px;
-}
+
+    .work-container-daily {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .work-number-daily-previous {
+        position: relative;
+        top: 3px;
+    }
 
 
 }
@@ -473,4 +452,15 @@ max-height: 262px !important;
     h1 {
         font-size: 1.2rem;
     }
+}
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
 }
